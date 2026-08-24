@@ -1,0 +1,24 @@
+├── app/
+│   ├── (auth)/              # Login, Signup, Verification routes
+│   ├── (dashboard)/
+│   │   ├── admin/           # Admin governance, user approval & mapping
+│   │   ├── trainer/         # Course builder, quiz creation, trainee insights
+│   │   └── trainee/         # Learning hub, courses, assessment interface
+│   ├── api/
+│   │   ├── assessments/     # Submit quiz, auto-grade handlers
+│   │   ├── courses/         # Course CRUD & enrollment endpoints
+│   │   └── competency/      # Trainer matching algorithm endpoint
+│   ├── layout.tsx
+│   └── page.tsx             # Landing page with public announcements
+├── components/
+│   ├── assessments/         # MCQ Engine, Timer, Question Navigator
+│   ├── competency/          # Admin Trainer Matcher UI
+│   ├── layout/              # Dynamic Role-Based Sidebar & Topbar
+│   └── ui/                  # Shadcn UI primitives
+├── lib/
+│   ├── auth.ts              # RBAC middleware & session strategies
+│   ├── prisma.ts            # Prisma client singleton
+│   └── utils.ts
+├── prisma/
+│   └── schema.prisma        # Complete relational database models
+└── types/                   # TypeScript interfaces
